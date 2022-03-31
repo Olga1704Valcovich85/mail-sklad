@@ -1,0 +1,22 @@
+{% extends 'HZ/layout.html'%}
+
+{% block title%}Главная страница{% endblock%}
+
+{% block content%}
+    <dif class ='features'>
+        <h1>Главная страница</h1>
+        <p> vvjrfavertaejuthnjrh</p>
+        <button class="btn btn-warning">на страницу про нас</button>
+
+        {% for val in values %}
+            {% if val == 'hello' %}
+                <p>{{val|upper}}</p>
+            {% endif %}
+        {% endfor %}
+        {{obj.age}}
+        {% for ob in obj%}
+            <p>{{ob}}</p>
+        {% endfor %}
+
+    {% include 'HZ/test.html'%}
+{% endblock%}

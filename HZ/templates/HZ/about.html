@@ -1,0 +1,18 @@
+{% extends 'HZ/layout.html'%}
+
+{% block title%} Про нас {% endblock%}
+
+{% block content%}
+
+     <dif class ='features'>
+        <h1>Про нас</h1>
+         {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+
+            </div>
+         {% endfor %}
+    </dif>
+{% include 'HZ/test.html'%}
+{% endblock%}
