@@ -1,0 +1,15 @@
+{% extends 'HZ/layout.html'%}
+
+{% block title%} {{ art.title }} {% endblock%}
+
+{% block content%}
+
+     <dif class ='features'>
+         <h1>{{ art.title }}</h1>
+         <p>{{ art.data }}</p>
+         <p>{{ art.ful }}</p>
+
+
+    </dif>
+{% include 'HZ/test.html'%}
+{% endblock%}
